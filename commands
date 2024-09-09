@@ -1,0 +1,17 @@
+sudo apt-get update
+sudo apt install python3-pip
+# Create a environment to install modules
+  sudo apt install python3.12-venv
+  python3 -m venv ~/Documents/DRAFT/DATA_ENGINEERING
+
+# Activate the environment which have created
+  source ~/Documents/DRAFT/DATA_ENGINEERING/bin/activate
+
+pip install pandas
+pip install s3fs
+pip install google-api-python-client
+pip install apache-airflow
+pip install mage-ai
+pip install setuptools
+mage start customer_complaint_project 
+pip install boto3
